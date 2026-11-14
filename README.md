@@ -2,6 +2,9 @@
 
 A 4-DOF robotic arm (rotating waist, shoulder, elbow, wrist/gripper) described in URDF/Xacro with STL mesh visuals, and visualised in RViz and Gazebo.
 
+<img width="1008" height="580" alt="Screenshot (32)" src="https://github.com/user-attachments/assets/5e68d917-6134-49c6-a40c-8b719f127d5a" />
+
+
 ## Features
 
 - Xacro-based robot description with reusable inertia macros (`cylinder_inertia`, `box_inertia`)
