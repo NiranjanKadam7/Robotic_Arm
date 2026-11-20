@@ -42,3 +42,17 @@ A 4-DOF robotic arm (rotating waist, shoulder, elbow, wrist/gripper) described i
 
 Frames: `world` → `base_link` → `Waist` → `arm_1` → `arm_2` → `gripper`
 
+## Run with
+Terminal 1: start the simulation
+
+bash
+cd ~/robotic_arm
+source install/setup.bash
+ros2 launch my_robot_bringup my_robot_gazebo.launch.xml
+
+Terminal 2: open the sliders
+
+bash
+cd ~/robotic_arm
+source install/setup.bash
+ros2 run rqt_joint_trajectory_controller rqt_joint_trajectory_controller --force-discover
