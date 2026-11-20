@@ -4,7 +4,7 @@
 A 4-DOF robotic arm (rotating waist, shoulder, elbow, wrist/gripper) described in URDF/Xacro with STL mesh visuals, and visualised in RViz and Gazebo.
 
 
-<img width="925" height="512" alt="Screenshot (42)" src="https://github.com/user-attachments/assets/7837313e-42e8-4972-af06-8fc5b9339445" />
+<img width="1920" height="1017" alt="Screenshot (42)" src="https://github.com/user-attachments/assets/7837313e-42e8-4972-af06-8fc5b9339445" />
 <img width="1920" height="1017" alt="Screenshot (43)" src="https://github.com/user-attachments/assets/330f4676-210b-4bfb-ae29-63cb30861965" />
 
 
