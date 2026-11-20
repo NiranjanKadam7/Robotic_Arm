@@ -13,6 +13,7 @@
     <node pkg="robot_state_publisher" exec="robot_state_publisher">
         <param name="robot_description"
                value="$(command 'xacro $(var urdf_path)')" />
+        <param name="use_sim_time" value="true"/>
     </node>
 
     <include file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
@@ -21,8 +22,20 @@
 
     <node pkg="ros_gz_sim" exec="create"
           args="-topic robot_description -name my_robot" />
-
+          
     <node pkg="rviz2" exec="rviz2" output="screen"
-          args="-d $(var rviz_config_path)" />
+          args="-d $(var rviz_config_path)">
+        <param name="use_sim_time" value="true"/>
+    </node>
+    <node pkg="ros_gz_bridge" exec="parameter_bridge"
+      args="/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock"/>
+
+    <node pkg="controller_manager" exec="spawner"
+      args="joint_state_broadcaster --controller-manager /controller_manager --controller-manager-timeout 60"/>
+
+    <node pkg="controller_manager" exec="spawner"
+      args="arm_controller --controller-manager /controller_manager --controller-manager-timeout 60"/>
+      
+
 
 </launch>
