@@ -1,8 +1,11 @@
+
 # Simple_robotic_arm: ROS 2 4-DOF Robotic Arm
 
 A 4-DOF robotic arm (rotating waist, shoulder, elbow, wrist/gripper) described in URDF/Xacro with STL mesh visuals, and visualised in RViz and Gazebo.
 
-<img width="1008" height="580" alt="Screenshot (32)" src="https://github.com/user-attachments/assets/5e68d917-6134-49c6-a40c-8b719f127d5a" />
+
+<img width="925" height="512" alt="Screenshot (42)" src="https://github.com/user-attachments/assets/7837313e-42e8-4972-af06-8fc5b9339445" />
+<img width="1920" height="1017" alt="Screenshot (43)" src="https://github.com/user-attachments/assets/330f4676-210b-4bfb-ae29-63cb30861965" />
 
 
 ## Features
